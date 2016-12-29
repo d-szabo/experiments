@@ -1,0 +1,5 @@
+CSS:
+ - using a 6x6 table ('td'-s) instead of divs
+
+JQUERY:
+ - create a global variable for the row and column of the cell that has been clicked recently

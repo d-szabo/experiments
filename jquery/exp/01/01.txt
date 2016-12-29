@@ -1,0 +1,6 @@
+CSS:
+ - a circle shaped div with 15px radius
+ - horizontal-vertical centered 'X' inside
+
+JQUERY:
+ - toggle class on hover and on click (changing border and background color)

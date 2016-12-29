@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>hello jquery</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div>
+	X
+</div>
+
+<script src="../jquery.min.js"></script>
+
+<script>
+	(function (){
+		//when clicked on the div, 
+		$('div').hover(function() {
+	    	$(this).addClass('hovered');
+	  	}, function() {
+	    	$(this).removeClass('hovered');
+	  	});
+
+	  	$('div').click(function(){
+			$(this).toggleClass('clicked');
+		});
+	})();
+</script>
+
+</body>
+</html>
+
+

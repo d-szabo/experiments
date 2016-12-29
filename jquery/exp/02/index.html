@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>hello jquery</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<table>
+	<tr>
+		<td>X</td>
+		<td>Y</td>
+		<td>Z</td>
+		<td>A</td>
+		<td>B</td>
+		<td>C</td>
+	</tr>
+	<tr>
+		<td>A</td>
+		<td>B</td>
+		<td>C</td>
+		<td>D</td>
+		<td>E</td>
+		<td>F</td>
+	</tr>
+	<tr>
+		<td>M</td>
+		<td>T</td>
+		<td>K</td>
+		<td>F</td>
+		<td>T</td>
+		<td>C</td>
+	</tr>
+	<tr>
+		<td>D</td>
+		<td>A</td>
+		<td>N</td>
+		<td>I</td>
+		<td>E</td>
+		<td>L</td>
+	</tr>
+	<tr>
+		<td>L</td>
+		<td>E</td>
+		<td>I</td>
+		<td>N</td>
+		<td>A</td>
+		<td>D</td>
+	</tr>
+	<tr>
+		<td>Q</td>
+		<td>W</td>
+		<td>E</td>
+		<td>R</td>
+		<td>T</td>
+		<td>Z</td>
+	</tr>
+</table>
+
+
+<script src="../jquery.min.js"></script>
+
+<script>
+	//global variables
+	var col_selected=0;
+	var row_selected=0;
+
+	(function (){
+		//when clicked on the span, 
+		$('td').hover(function() {
+	    	$(this).addClass('hovered');
+	  	}, function() {
+	    	$(this).removeClass('hovered');
+	  	});
+
+	  	$('td').click(function(){
+			$(this).toggleClass('clicked');
+			col_selected = $(this).parent().children().index($(this));
+  			row_selected = $(this).parent().parent().children().index($(this).parent());
+  			console.log('Row: ' + row_selected + ', Column: ' + col_selected);
+		});
+	})();
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,6 @@
+CSS:
+
+JQUERY:
+ - put the script in a separate file ("js/script.js")
+ - new function that chooses a random character [A-Z] - choose_a_letter()
+ - iterates through the (empty) table cells and puts a random character in them
