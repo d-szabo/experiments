@@ -1,0 +1,6 @@
+CSS:
+
+JQUERY:
+ - if you hover to a cell in the same row or column where a cell has been already clicked, every cell between the hovered and the clicked one becomes red ('clicked')
+	- using nth-child tricks in the <table>
+ - todo: when the mouse moves away, these cells go back to default
